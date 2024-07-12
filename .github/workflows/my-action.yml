@@ -16,15 +16,15 @@ jobs:
         runs-on: ubuntu-latest 
         steps: 
             - name: Check out this repo
-            uses: actions/checkout@v3
+              uses: actions/checkout@v3
             
             - name: install Dependencies 
-            run: sudo apt install -y build-essential python3 
+              run: sudo apt install -y build-essential python3 
             
             - run: pwd
 
             - name: Run Test
-            run: python3 test.py
+              run: python3 test.py
 
 
 
