@@ -6,11 +6,12 @@ on: [push]
 
 # Jobs to run , they run in parallel 
 jobs:
+    
     say-hello: 
         runs-on: ubuntu-latest 
         steps: 
             - run: echo "Hello, github actions"
-            
+
     # job to build and test our c code 
     build-and-test:
         needs: [say-hello]
